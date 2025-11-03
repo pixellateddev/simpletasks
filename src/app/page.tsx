@@ -1,7 +1,7 @@
 import { Button, Container, Group, Paper, Text, Title } from '@mantine/core'
 import Link from 'next/link'
-import { getCurrentUser } from '@/lib/auth'
 import { LogoutButton } from '@/components/LogoutButton'
+import { getCurrentUser } from '@/lib/auth'
 
 export default async function Home() {
   const user = await getCurrentUser()
@@ -42,9 +42,7 @@ export default async function Home() {
             </Button>
           </Link>
           <Link href="/register">
-            <Button size="md">
-              Create Account
-            </Button>
+            <Button size="md">Create Account</Button>
           </Link>
         </Group>
       </Paper>

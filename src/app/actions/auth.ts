@@ -23,7 +23,7 @@ export interface ActionResult {
  * Login action
  */
 export async function login(
-  prevState: ActionResult | null,
+  _prevState: ActionResult | null,
   formData: FormData,
 ): Promise<ActionResult> {
   try {
@@ -102,7 +102,7 @@ export async function login(
  * Register action
  */
 export async function register(
-  prevState: ActionResult | null,
+  _prevState: ActionResult | null,
   formData: FormData,
 ): Promise<ActionResult> {
   try {

@@ -12,8 +12,8 @@ import {
   TextInput,
   Title,
 } from '@mantine/core'
-import { IconCheck } from '@tabler/icons-react'
 import { useForm } from '@mantine/form'
+import { IconCheck } from '@tabler/icons-react'
 import { zodResolver } from 'mantine-form-zod-resolver'
 import Link from 'next/link'
 import { useActionState, useEffect, useState, useTransition } from 'react'

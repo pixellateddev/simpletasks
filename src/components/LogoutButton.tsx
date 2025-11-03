@@ -14,7 +14,12 @@ export function LogoutButton() {
   }
 
   return (
-    <Button onClick={handleLogout} loading={isPending} variant="light" color="red">
+    <Button
+      onClick={handleLogout}
+      loading={isPending}
+      variant="light"
+      color="red"
+    >
       Logout
     </Button>
   )

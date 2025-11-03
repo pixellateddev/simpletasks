@@ -12,6 +12,7 @@ const TOKEN_MAX_AGE = 60 * 60 * 24 * 7 // 7 days
 export interface JWTPayload {
   userId: string
   email: string
+  [key: string]: unknown
 }
 
 /**
@@ -38,7 +39,7 @@ export async function verifyToken(token: string): Promise<JWTPayload | null> {
   try {
     const verified = await jwtVerify(token, JWT_SECRET)
     return verified.payload as JWTPayload
-  } catch (error) {
+  } catch {
     return null
   }
 }
